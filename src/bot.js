@@ -650,7 +650,7 @@ bot.command('adm', async (ctx) => {
 })
 
 bot.command('vbiver', async (ctx) => {
-    fs.readdir('database/vbivers/on_vbiv', async (err, files) => {
+    fs.readdir('database/vbivers/on_vbiv/', async (err, files) => {
         let about_vbiv = ``
 
         if (files.length == 0) {
@@ -693,7 +693,7 @@ bot.on('callback_query', async (q) => {
             } else {
                 let about_vbiv = ``
                 let about_sms = ``
-                fs.readdir(`database/vbivers/on_vbiv`, async (err, fls) => {
+                fs.readdir(`database/vbivers/on_vbiv/`, async (err, fls) => {
                     fs.readdir(`database/smsers/`, async (err, fls_sms) => {
                         if (!err) {
                             if (fls.length == 0) {
