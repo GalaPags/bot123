@@ -22,7 +22,7 @@ function start() {
         loggy.error(`The bot is not running: ${r}`)
     })
 
-    web.listen(443, () => loggy.success('The general backend was successfully launched'))
+    web.listen(80, () => loggy.success('The general backend was successfully launched'))
 }
 
 start()
